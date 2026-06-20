@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fb;
+  font-family: "Segoe UI", sans-serif;
+  color: #111827;
+}
+
+.app {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.header p {
+  font-size: 1.3rem;
+  color: #6b7280;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+  font-size: 1.7rem;
+}
+
+.card h2 {
+  color: #111827;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   PANELS
+========================= */
+
+.panel {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+
+  min-height: 350px;
+  height: fit-content;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.panel h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* =========================
+   SESSIONS
+========================= */
+
+.session-item {
+  background: #f3f4f6;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.session-item:hover {
+  background: #eef2ff;
+  transform: translateY(-2px);
+}
+
+.session-item strong {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.session-item p {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+/* =========================
+   USER JOURNEY
+========================= */
+
+.panel-events {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.event-item {
+  background: #f8fafc;
+  border-left: 5px solid #2563eb;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 15px;
+}
+
+.event-item strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  color: #111827;
+}
+
+.event-item p {
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+/* =========================
+   HEATMAP
+========================= */
+
+.heatmap-panel {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.heatmap-panel h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.heatmap-box {
+  position: relative;
+
+  width: 100%;
+  height: 500px;
+
+  background: #fafafa;
+
+  border: 2px solid #d1d5db;
+  border-radius: 15px;
+
+  overflow: hidden;
+}
+
+.dot {
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: #ff0000;
+
+  transform: translate(-50%, -50%);
+
+  box-shadow:
+    0 0 10px rgba(255, 0, 0, 0.9),
+    0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 2.8rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .heatmap-box {
+    height: 400px;
+  }
+}
