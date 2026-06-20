@@ -12,6 +12,24 @@ A full-stack user analytics dashboard built for the CausalFunnel assignment.
 * React Frontend
 * Express Backend
 
+## Screenshots
+
+### Dashboard Overview
+
+![Dashboard](screenshots/dashboard-home.png)
+
+### User Journey Analysis
+
+![User Journey](screenshots/user-journey.png)
+
+### Additional User Journey View
+
+![User Journey 2](screenshots/user-journey1.png)
+
+### Click Heatmap
+
+![Heatmap](screenshots/heatmap.png)
+
 ## Tech Stack
 
 ### Frontend
